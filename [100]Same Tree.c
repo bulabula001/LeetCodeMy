@@ -21,7 +21,7 @@ bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
         return false;        
     }
 
-    if(p->val == q->val)
+    // if(p->val == q->val)
         // printf("equal !\tp->val , q->val  %d, %d\n", p->val,q->val);   
         /*
         不能写成
@@ -30,5 +30,4 @@ bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
         */
         return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
     
-    return;
 }
